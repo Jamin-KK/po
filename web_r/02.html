@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web responsive</title>
+    <style>
+        body{ background: palegoldenrod; color: #333;}
+        h1::before{content: '1. ';}
+        h1::after{content: ' - 기본';}
+        /* ~1280px :desktop */
+        @media (max-width:1280px){
+            body{ background: palegreen;}
+            h1::before{content: '2. ';}
+            h1::after{content: '- 1024px ~ 1280px';}
+        }
+        /* ~1024px : desktop*/
+        @media (max-width:1024px){
+            body{ background: palegreen;}
+            h1::before{content: '3. ';}
+            h1::after{content: '- 960px ~ 1024px';}
+        }
+        /* ~960px : laptop*/
+        @media (max-width:960px){
+            body{ background: paleturquoise;}
+            h1::before{content: '4. ';}
+            h1::after{content: '- 768px ~ 960px';}
+        }
+        /* ~768px : Tablet*/
+        @media (max-width:768px){
+            body{ background: palevioletred;}
+            h1::before{content: '5. ';}
+            h1::after{content: '- 576px ~ 768px';}
+        }
+        /* ~576px : mobile*/
+        @media (max-width:576px){
+            body{ background: papayawhip;}
+            h1::before{content: '6. ';}
+            h1::after{content: '- 0 ~ 576px';}
+        }
+    </style>
+</head>
+<body>
+    <h1>미디어쿼리(MediaQuery)</h1>
+	<p>미디어 쿼리는 화면 크기에 따른 각각의 속성 값을 지정하여, 여러가지 화면을 구성하는 기술입니다.</p>
+	<p>~1280px :desktop<br>~1024px : desktop<br>~960px : laptop<br>~768px : Tablet<br>~576px : mobile
+        
+        </p>
+    <p>@media only all and (조건문) {실행문}</p>
+    <ul>
+        <li>@media : 미디어 쿼리가 시작됨을 표시합니다.</li>
+        <li>only :  미디어 쿼리 구문을 해석하라는 명령어입니다.(생략가능)</li>
+        <li>all : 미디어 쿼리를 해석해야 할 대상을 나타냅니다.(생략가능)
+            <ul>
+                <li>all : 모든 미디어 유형에서 사용할 CSS를 정의합니다.</li>
+                <li>print : 인쇄 장치에서 사용할 CSS를 정의합니다.</li>
+                <li>screen : 컴퓨터 스크린에서 사용할 CSS를 정의합니다.</li>
+                <li>aural : 화면을 읽어 소리로 출력해주는 장치에서 CSS를 정의합니다.</li>
+                <li>tv : TV에서 사용할 CSS를 정의합니다.</li>
+                <li>handheld : 손에 들고 다니는 장치를 사용할 CSS를 정의합니다.</li>
+                <li>projection : 프로젝트를 위한 사용할 CSS를 정의합니다.</li>
+            </ul>
+        </li>
+        <li>and : 앞과 두의 조건을 나타냅니다.(생략가능)</li>
+        <li>(조건문) : 해당 조건을 설정 할 수 있습니다.</li>
+        <li>(실행문) : 조건에 따른 실행을 설정합니다.</li>
+    </ul>
+</body>
+</html>

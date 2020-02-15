@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="oo0ooo0">
+    <meta name="description" content="Web Publishing portfolio site">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="responsive web, Webstandard, WebPublisher, WebAccessibility, HTML5">
+    <title>oo0ooo02</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style2.css">
+   
+    <!-- Facebook meta tags -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="making responsive site" />
+    <meta property="og:url" content="____host____" />
+    <meta property="og:image" content="___img_____" />
+    <meta property="og:site_name" content="Web Publishing portfolio(site_name)" />
+    <meta property="og:description" content="making Web Publishing portfolio(description)" />
+
+    <!-- twitter meta tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@oo0ooo0" />
+    <meta name="twitter:title" content="Web Publishing portfolio(title)" />
+    <meta name="twitter:description" content="mmaking Web Publishing portfolio(description)." />
+    <meta property="twitter:image" content="__img______" />
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Public+Sans:100,300,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:400,700,900|Public+Sans:100,300,500,700,900&display=swap" rel="stylesheet">
+    
+    <!-- HTLM5shiv ie6~8 -->
+    <!--[if lt IE 9]> 
+        <script src="js/html5shiv.min.js"></script>
+        <script type="text/javascript">
+            alert("The browser you are using is not supported at this website. Please update to the latest browser :)");
+        </script>
+    <![endif]-->
+</head>
+<body>
+   
+    <div id="contents">
+        <section id="section1">
+            <div class="container">
+                <div class="row">
+                    <div class="sec1">
+                        <div class="text-wrap">
+                            <div class="top-menu">
+                                <ul>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Github</a></li>
+                                    <li><a href="#">Email</a></li>
+                                </ul>
+                            </div>
+                            <h1> 
+                                <svg class="svgWrap" viewBox="0 0 1000 550">
+                                    <text class="aniText" x="50%" y="50%" dy=".35em" text-anchor="middle">daily</text>
+                                </svg>
+                                
+                                
+                                <span class="mail">web publisher || <a href="mailto:kkjjajja@gmail.com" target="blank">kkjjajja@gmail.com</a></span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //section1 -->
+        
+        <section id="section2">
+            <div class="container">
+                <div class="row">
+                    <div class="sec2">
+                        <div class="phone-wrap">
+                            <div>
+                                <img src="http://hourly-app.com/img/new-task.svg" alt="">
+                                <div class="box"></div>
+                            </div>
+                            <div><img src="http://hourly-app.com/img/new-task.svg" alt=""></div>
+                            <div><img src="http://hourly-app.com/img/new-task.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //section2 -->
+        
+        <section id="section3"></section><!-- //section3 -->
+        <section id="section4"></section><!-- //section4 -->
+        <section id="section5"></section><!-- //section5 -->
+        <section id="section6"></section><!-- //section6 -->
+        <section id="section7"></section><!-- //section7 -->
+    </div>
+    <!-- //contents -->
+    
+    <!-- script  -->
+    <script src="js/jquery.min_1.12.4.js"></script>
+    <script src="js/jquery-ui-1.12.1.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/skrollr.min.js"></script>
+    <script>
+        //skrollr
+        var s = skrollr.init({
+            edgeStrategy: 'set',
+            easing: 'linear'
+        });
+        
+        setInterval(start, 2000);
+        
+        function start(){
+            $("#section1").addClass("show")
+        }
+        
+        $(window).scroll(function(){
+            var wScroll = $(this).scrollTop();
+            
+            $(".scroll").text(wScroll);
+            
+        });
+    </script>
+    
+</body>
+</html>

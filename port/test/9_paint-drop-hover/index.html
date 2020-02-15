@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Paint Drop Hover</title>
+  <link href="https://fonts.googleapis.com/css?family=Heebo:700&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+
+
+  <div class="footer_ani">
+
+<!-- partial:index.partial.html -->
+<button class="font-style">
+  Hover Me
+
+  <!-- If you have time, it would be better to generate this SVG for each button you want the effect on -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 426 98">
+    <defs>
+      <mask id="mask">
+        <circle class="mask" r="0" fill="#fff" cx="0" cy="50" />
+      </mask>
+    </defs> 
+
+    <g id="toBeRevealed" mask="url(#mask)">
+    <linearGradient id="gradient">
+        <stop stop-color="#fc0f47" offset="0%" />
+        <stop stop-color="#9b040c" offset="100%" />
+      </linearGradient>
+      <rect width="426" height="98" fill="url(#gradient)" />
+      <text x="15" y="81" class="font-style" textAnchor="start" fill="#fff">Hover Me</text>
+    </g>
+  </svg>
+</button>
+
+</div>
+
+
+
+
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js'></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<h1 id="clock1" style="color:gray;">00:00</h1>
+<h1 id="clock2" style="color:gray;">00:00</h1>
+<h1 id="clock3" style="color:gray;">00:00</h1>
+<h1 class="clock" style="color:gray;">00:00</h1>
+
+
+<script>
+            // clock
+            
+            let clockTarget = document.getElementById("clock1");
+        let clockTarget2 = document.getElementById("clock2");
+        let clockTarget3 = document.getElementById("clock3");
+            
+        function clock() {
+            let date = new Date();
+            let month = date.getMonth();
+            let hours = date.getHours();
+            let minutes = date.getMinutes();
+            let seconds = date.getSeconds();
+             clockTarget .innerText = `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes }`  : minutes }`;
+             clockTarget2 .innerText = `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes }`  : minutes }`;
+             clockTarget3 .innerText = `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes }`  : minutes }`;
+        }
+        
+        function init() {
+        clock();
+        setInterval(clock, 1000);
+        }
+        
+        init();
+
+
+// var clockTarget = document.getElementById("clock1"). document.getElementById("clock2"). document.getElementById("clock3");
+// // var clockTarget = document.getElementsByClassName('clock');
+
+
+// function clock() {
+//     var date = new Date();
+
+//     // date Object를 받아오고 
+//     var month = date.getMonth();
+
+//     // 달을 받아옵니다 
+//     var clockDate = date.getDate();
+
+//     // 몇일인지 받아옵니다 
+//     var day = date.getDay();
+
+//     // 요일을 받아옵니다. 
+//     var week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+//     // 요일은 숫자형태로 리턴되기때문에 미리 배열을 만듭니다. 
+//     var hours = date.getHours();
+
+//     // 시간을 받아오고 
+//     var minutes = date.getMinutes();
+
+//     // 분도 받아옵니다.
+//     var seconds = date.getSeconds();
+
+//     // 초까지 받아온후 
+//     clockTarget .innerText = `${month+1}. ${clockDate}. ${week[day]}` + `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes }`  : minutes }:${seconds < 10 ? `0${seconds }`  : seconds }`;
+
+//     // 월은 0부터 1월이기때문에 +1일을 해주고 
+
+//     // 시간 분 초는 한자리수이면 시계가 어색해보일까봐 10보다 작으면 앞에0을 붙혀주는 작업을 3항연산으로 했습니다. 
+// }
+
+
+
+// function init() {
+
+// clock();
+
+// // 최초에 함수를 한번 실행시켜주고 
+// setInterval(clock, 1000);
+
+// // setInterval이라는 함수로 매초마다 실행을 해줍니다.
+
+// // setInterval은 첫번째 파라메터는 함수이고 두번째는 시간인데 밀리초단위로 받습니다. 1000 = 1초 
+
+// }
+
+
+
+// init();
+
+
+</script>
+
+
+</body>
+</html>

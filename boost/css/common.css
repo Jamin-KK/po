@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900|Noto+Serif+KR:400,500,700|Roboto:400,500,900&display=swap');
+/* reset */
+
+::selection {
+    color: white;
+    background: black;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, li, ol {
+    margin: 0;
+    padding: 0;
+}
+
+.t_333 {
+    color: #333;
+}
+
+.t_666 {
+    color: #666;
+}
+
+.t_999 {
+    color: #999;
+}
+
+.t_aaa {
+    color: #aaa;
+}
+
+.mobile {
+    display: none;
+}
+
+
+body {
+    color: #4a90e2;
+    background-color: #e5f1ff;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+}
+
+section {
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 36px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #000;
+}
+
+em {
+    font-style: normal;
+}
+
+.Roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.NotoSerif {
+    font-family: 'Noto Serif KR', serif;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 16px 30px;
+    margin-top: 40px;
+}
+
+.btn:hover {
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn1 {
+    background-color: #5fa8fc;
+}
+
+.btn1:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn2 {
+    border: 2px solid white;
+    background-color: rgba(0,0,0,0);
+}
+
+.btn2:hover {
+    background-color: #5fa8fc;
+    color: #fff;
+}
+
+.btn3 {
+    border-radius: 16px;
+    background-color: white;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+.blind {
+    font-size: 0;
+}
+
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
+}
+
+.float_clear {
+    clear: both;
+}
+
+.text_yellow {
+    color: yellow;
+}
+
+.text_black {
+    color: #000;
+}
+
+@media screen and (max-width:1260px) {
+    .inner {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+    .desktop_1260 {
+        display: none;
+    }
+}
+
+/* 768 */
+
+@media screen and (max-width:768px) {
+    .mobile {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+    body {
+        text-align: center;
+        font-size: 18px;
+    }
+    .btn {
+        font-size: 16px;
+        padding: 16px 20px;
+    }
+}

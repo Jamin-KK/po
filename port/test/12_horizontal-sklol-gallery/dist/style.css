@@ -1,0 +1,133 @@
+/* Inspired by this pen by Pieter Biesemans https://codepen.io/pieter-biesemans/pen/BQBWXX and My Mother Before Me project http://mymotherbeforeme.com/ */
+.horizontal-scroll {
+  width: 100%;
+  height: 23vw;
+  /* background-color: #fff; */
+ }
+
+/* hide scrollbar */
+::-webkit-scrollbar {
+  width: .1vw;
+  height: .1vw;
+}
+
+::-webkit-scrollbar-button {
+  width: .1vw;
+  height: .1vw;
+}
+.external { overflow: hidden; position: relative;
+  height: 23vw;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.horizontal-scroll-box {
+   display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 20vw;
+  -webkit-transform: rotate(-90deg) translate3d(0,-20vw,0);
+          transform: rotate(-90deg) translate3d(0,-20vw,0);
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0;
+  height: 100vw;
+  -webkit-perspective: .1vw;
+          perspective: .1vw;
+	-webkit-transform-style: preserve-3d;
+	        transform-style: preserve-3d;
+  padding-bottom: .1vw;
+}
+.img-box {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  min-height: 40vh;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: rotate(90deg) translateZ(.01vw) scale(0.9) translateX(0vw) translateY(-3vw);
+          transform: rotate(90deg) translateZ(.01vw) scale(0.9) translateX(0vw) translateY(-3vw);
+  -webkit-transition: 1s;
+  transition: 1s;
+  box-sizing: border-box;
+
+}
+
+.img-box:hover {
+ min-height: 65vh;
+}
+
+.slower {
+  -webkit-transform: rotate(90deg) translateZ(-.02vw) scale(1.1) translateX(0%) translateY(-3vw);
+          transform: rotate(90deg) translateZ(-.02vw) scale(1.1) translateX(0%) translateY(-3vw);
+}
+.slower1 {
+  -webkit-transform: rotate(90deg) translateZ(-.025vw) scale(1.05) translateX(0%) translateY(2vw);
+          transform: rotate(90deg) translateZ(-.025vw) scale(1.05) translateX(0%) translateY(2vw);
+}
+.slower2 {
+  -webkit-transform: rotate(90deg) translateZ(-.03vw) scale(1.3) translateX(0%) translateY(1vw);
+          transform: rotate(90deg) translateZ(-.03vw) scale(1.3) translateX(0%) translateY(1vw);
+}
+.slower-down {
+  -webkit-transform: rotate(90deg) translateZ(-.02vw) scale(1.1) translateX(0%) translateY(3vw) ;
+          transform: rotate(90deg) translateZ(-.02vw) scale(1.1) translateX(0%) translateY(3vw) ;
+}
+.faster {
+  -webkit-transform: rotate(90deg) translateZ(.015vw) scale(0.8) translateX(0%) translateY(3vw) ;
+          transform: rotate(90deg) translateZ(.015vw) scale(0.8) translateX(0%) translateY(3vw) ;
+}
+.faster1 {
+  -webkit-transform: rotate(90deg) translateZ(.005vw) scale(0.8) translateX(0%) translateY(3vw) ;
+          transform: rotate(90deg) translateZ(.005vw) scale(0.8) translateX(0%) translateY(3vw) ;
+}
+.fastest {
+  -webkit-transform: rotate(90deg) translateZ(.022vw) scale(0.7) translateX(-1.5vw) translateY(-2.5vw) ;
+          transform: rotate(90deg) translateZ(.022vw) scale(0.7) translateX(-1.5vw) translateY(-2.5vw) ;
+}
+.vertical {
+   -webkit-transform: rotate(90deg) translateZ(-.015vw) scale(1.15) translateX(0%) translateY(0%) ;
+           transform: rotate(90deg) translateZ(-.015vw) scale(1.15) translateX(0%) translateY(0%) ;
+}
+.last {
+  -webkit-transform: rotate(90deg) translateZ(-.02vw) scale(1.1) translateX(1vw) translateY(-2.5vw) ;
+          transform: rotate(90deg) translateZ(-.02vw) scale(1.1) translateX(1vw) translateY(-2.5vw) ;
+}
+
+
+.img-box a {
+  overflow: hidden;
+  display: block;
+  padding: 0vw ;
+  /* box-shadow: 0 1vw 5vw rgba(238, 227, 193, 0.5); */
+}
+.img-box img {
+  max-width: 20vw;
+  max-height: 10vw;
+  -webkit-transition: .5s;
+  transition: .5s;
+  vertical-align: top;
+  -webkit-filter:  saturate(60%) sepia(60%) hue-rotate(5deg);
+          filter:  saturate(60%) sepia(60%) hue-rotate(5deg);
+}
+.img-box a:hover img {
+  -webkit-filter: none;
+          filter: none;
+}
+.horizontal-scroll  p { margin: 0; color: #EEE3C1; font-size: 1.5vw; line-height: 3vw;  background: none;}
+
+.icon svg {    
+    width: 1.5vw;
+    fill: #EEE3C1;
+}

@@ -1,0 +1,99 @@
+
+/* layout */
+body { background-color: #0a0a0a; color: #EEE3C1; font-family: 'Lato', sans-serif; font-weight: 700;}
+/*#title {background-color: rgba(255, 255, 255, 0.7); }*/
+/*#sec1 {background-color: rgba(255, 255, 255, 0.65);}*/
+#sec2 {background-color: rgba(255, 255, 255, 0.6);}
+#sec3 {background-color: rgba(255, 255, 255, 0.55);}
+#sec4 {background-color: rgba(255, 255, 255, 0.5);}
+#sec5 {background-color: rgba(255, 255, 255, 0.45);}
+#footer {background-color: rgba(255, 255, 255, 0.4);}
+
+
+
+
+/* container */
+.container{position: relative; width: 980px;  margin: 0 auto;}
+
+
+/* font */
+.txtRed{color: #D0021A;}
+.txt_m{font-size: 26px; font-weight: 800;}
+/* line */
+hr{ width: 100%; color: #EEE3C1; }
+
+
+
+/* header */
+#title{}
+#title .header_menu {overflow: hidden; height: 95px; border-bottom: 2px solid #EEE3C1; }
+#title .header_menu a {float: right; margin-left: 9px; margin-top: 65px; font-size: 20px; color:#EEE3C1;}
+
+#title .title {position: relative; margin-top: 26.7px; height: 380px; border-bottom: 2px solid #EEE3C1; box-sizing: border-box;}
+.title h3 {position: absolute; left: 395px; font-size: 26px; font-weight: bold; color: #EEE3C1;}
+.title a {color: inherit;} 
+.title .calender {
+			position: absolute; 
+			top:73px; 
+			width: 206px; height: 170px; 
+            border: 1px solid #fff;
+        }
+.calender img{ left: 0; width: 100%; height: 100%; }
+/*.title .calender::before { 
+	content: ''; width: 206px; height: 170px; 
+	background: url(../img/calender.png);
+    position: absolute; left: 0; top: 6px;
+	border: 1px solid #000;
+} */
+.title h1 img {width: 777px;  position: absolute; right: 0;}
+.title > div{
+	position: absolute;
+	top: 295px; left: 23px;
+	width: 772px; height: 60px;}
+.title .title_texst {overflow: hidden;}
+.title p {float: left;  width: 24%; margin-right: 1%;}
+.title p:nth-child(3) {padding-right: 1%; box-sizing: border-box;}
+.title p:nth-child(4) {padding-left: 2%; box-sizing: border-box;}
+
+/* section1 */
+#sec1{}
+#sec1 .container{ padding-top: 22px; height: 687px; box-sizing: border-box;}
+#sec1 img {width: 100%;}
+/*#sec1 .container::before{
+	content: ''; width: 100%; height: 649px; 
+	background: url(../img/mockup_iphon_w.png);
+    position: absolute; left: 0; top: 22px;
+	border: 1px solid #000;
+}*/
+#sec1 article {position: absolute; top:123px; width: 280px; height: 470px;  background: rgba(255,0,0,0.3);}
+#sec1 .sec1_mobile1 {left: 20px;}
+#sec1 .sec1_mobile2 {left: 350px;}
+#sec1 .sec1_mobile3 {left: 680px;}
+
+/* section2 */
+#sec2{}
+#sec2 .sec2_left {}
+#sec2 .sec2_rights {}
+
+/* section3 */
+#sec3 {}
+
+/* section4 */
+#sec4 {}
+#sec4 .sec4_left {}
+#sec4 .sec4_right {}
+
+/* section5 */
+#sec5 {}
+#sec5 .sec5_standard {}
+#sec5 .sec5_responsive {}
+#sec5 .sec5_animation {}
+
+/* footer */
+#footer{}
+#footer .footer_upside {}
+#footer .footer_downside {}
+
+
+
+

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta property="og:title" content="lifelovepeople" />
+    <meta property="og:url" content="http://lifelovepeople.dothome.co.kr" />
+    <meta property="og:image" content="img/meta_logo.png" />
+    <meta property="og:description" content="콘텐츠를 사랑하며 제작하는 lifelovepeople" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="lifelovepeople" />
+    <meta name="twitter:url" content="http://lifelovepeople.dothome.co.kr" />
+    <meta name="twitter:image" content="img/meta_logo.png" />
+    <meta name="twitter:description" content="콘텐츠를 사랑하며 제작하는 lifelovepeople" />
+
+    <meta name='keywords' content='디자이너, 웹디자이너, 콘텐츠디자이너, 콘텐츠크리에이터, 크레이터, 강사, 퍼블리셔' />
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900|Noto+Serif+KR:400,500,700|Roboto:400,500,900&display=swap" rel="stylesheet"> -->
+
+    <link rel=stylesheet type="text/css" href="css/common.css">
+    <link rel=stylesheet type="text/css" href="css/index.css">
+    <link rel=stylesheet type="text/css" href="css/nav.css">
+    <link rel=stylesheet type="text/css" href="css/footer.css">
+
+    <title>BoostCamp 2019</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+            $("#top").css("cursor", "pointer");
+            $("#top").on("click", function () {
+                $("html").animate({ scrollTop: 0 }, 500);
+            });
+            // top 초기화
+            var scrollNum = $(window).scrollTop();
+            if (scrollNum < 200) {
+                $("#top").css("display", "none");
+            } else if (scrollNum >= 200 && scrollNum < 550) {
+                $("#top").css("display", "block");
+                $("#top").css("color", "white");
+            } else {
+                $("#top").css("color", "black");
+            }
+
+            $(window).on("scroll", function () {
+                scrollNum = $(window).scrollTop();
+                console.log(scrollNum);
+
+                if (scrollNum < 200) {
+                    $("#top").css("display", "none");
+                } else if (scrollNum >= 200 && scrollNum < 550) {
+                    $("#top").css("display", "block");
+                    $("#top").css("color", "white");
+                } else {
+                    $("#top").css("color", "black");
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="back"></div>
+    <header>
+        <div class="inner">
+            <!-- <div id="circle"></div> -->
+            <div id="gnb">
+                <nav>
+                    <h1 class="float_left"><a href="#"><span class="blind">BOOSTCAMP</span></a></h1>
+                    <ul id="desktopMenu" class="float_right">
+                        <li class="desktop"><a href="#">boostcamp 2019</a></li>
+                        <li class="desktop"><a href="#">모집 안내</a></li>
+                        <li class="desktop"><a href="#">FAQ</a></li>
+                        <li><a href="https://apply.connect.or.kr/connect/applyDetail?annoId=20002905&page=1"
+                                target="_blank" title="새창열기">지원하기</a></li>
+                    </ul>
+
+                    <ul id="mobileMenu" class="float_right mobile">
+                        <li id="menuClose">&Cross;</li>
+                        <li><a href="#">boostcamp 2019</a></li>
+                        <li><a href="#">모집 안내</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li class="desktop">
+                            <a href="https://apply.connect.or.kr/connect/applyDetail?annoId=20002905&page=1" target="_blank" title="새창열기">지원하기</a></li>
+                    </ul>
+                    <div class="mobile" id="triger">&equiv;</div>
+                    <!-- 모바일 메뉴 제어 스크립트  -->
+                    <script>
+                        document.getElementById("triger").onclick = function () {
+                            console.log("햄버거버튼 클릭");
+                            document.getElementById("mobileMenu").style.display = "block";
+                            document.getElementById("back").style.display = "block";
+                        };
+                        document.getElementById("menuClose").onclick = function () {
+                            console.log("닫기버튼 클릭");
+                            document.getElementById("mobileMenu").style.display = "none";
+                            document.getElementById("back").style.display = "none";
+                        }
+                    </script>
+
+                </nav>
+                <p class="float_clear"><strong class="Roboto"><span class="text_black">C</span>onnect <span
+                            class="text_black">P</span>ossibility</strong>
+                    <span id="move_text1">강도 높은 문제 해결과 반복되는<br class="mobile"> 협업 경험을 통해<br>
+                    지속 가능한 개발자로 성장합니다</span></p>
+                <p>부스트캠프 2019 지원 기간<br>
+                    2019.06.17(월) ~ 07.03(수)</p>
+            </div>
+        </div>
+    </header>
+
+    <section id="section1">
+        <div class="inner">
+            <h2>boostcamp 2019</h2>
+            <p>배움의 기회와 연결하다<br>
+                실무 경험이 있는 멘토와 연결하다<br>
+                최고의 동료들과 연결하다<br>
+                문제 해결의 경험에 연결하다<br>
+                하고 싶은 일에 연결하다<br>
+                <em>부스트캠프는 가능성을 연결합니다</em><br>
+                <a class="btn btn2" href="#" title="페이지로 이동">boostcamp 2019 탐색하기</a></p>
+        </div>
+    </section>
+
+    <section id="section2">
+        <div class="inner">
+            <h2>지속 가능한 개발자를<br class="mobile">지향합니다</h2>
+            <p>부스트캠프는 성장을 꿈꾸는<br class="mobile">사람들을 위한 플랫폼입니다<br>
+                부스트캠프에서는 모두가<br class="mobile">스스로 학습의 주체가 됩니다<br>
+                부스트캠프는<br class="mobile">동료 학습을 지향합니다</p>
+        </div>
+    </section>
+
+    <section id="section3">
+        <div class="inner">
+            <h2>boostcamp 2019<br class="mobile">일정 안내</h2>
+            <p>부스트캠프 2019는 웹의 동작 구조를 원활하게 이해하는 풀스택 개발자를 발굴합니다</p>
+            <ol>
+                <li>
+                    <p>07.03</p>
+                    <p>부스트캠프<br class="desktop_1260">지원 기간</p>
+                </li>
+                <li>
+                    <p>07.06</p>
+                    <p>온라인<br class="desktop_1260">코딩테스트</p>
+                </li>
+                <li>
+                    <p>07.10</p>
+                    <p>오프라인<br class="desktop_1260">코딩테스트</p>
+                </li>
+                <li>
+                    <p>07.12</p>
+                    <p>최종 합격자<br class="desktop_1260">발표</p>
+                </li>
+                <li>
+                    <p>07.15-08.09</p>
+                    <p>부스트캠프<br class="desktop_1260">챌린지</p>
+                </li>
+                <li>
+                    <p>08.26-12.29</p>
+                    <p>부스트캠프<br class="desktop_1260">멤버십</p>
+                </li>
+            </ol>
+
+            <a id="recruit_btn" class="btn btn1" href="#" title="페이지로 이동">모집 안내 바로 가기</a>
+        </div>
+    </section>
+    <footer>
+        <div id="top">
+            <div>&UpTeeArrow;</div>
+            <div>top</div>
+        </div>
+        <div class="inner">
+            <address>
+                <span class="t_666">© CONNECT</span><br>
+                <span class="t_666">mail. </span><a
+                    href="mailto:kkjjajja@gamil.com">kkjjajja@gamil.com</a><br>
+                
+            </address>
+            <ul>
+                <li><a href="#">facebook</a></li>
+                <li><a href="#">instargram</a></li>
+                <li><a href="#">blog</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
