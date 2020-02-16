@@ -226,7 +226,8 @@ body {background: #0a0a0a}
 /* .sec5 .subtitle { font: bold 3vw/1 'Orbitron';  color:#ca0813; text-align: center; letter-spacing: -.1vw;} */
 .sec5  article {overflow: hidden; width: 100%; height: auto; padding: 3vw 0 3vw 0;}
 .sec5 .caption {margin: 0; text-align:center; font: 600 2.5vw/1 'Orbitron'; line-height: 1.2; letter-spacing: 1.1; word-spacing: 1; color:#EEE3C1;}
-.sec5 .imgs { }
+.sec5 .imgs {position: relative;}
+.sec5 .imgs video {position: absolute; top: 2.1vw; left: 2.3vw; width: 53vw; height: 30.1vw; box-sizing: border-box;}
 .sec5 .imgs .img {}
 
 .sec5 .port1 {}
@@ -237,11 +238,11 @@ body {background: #0a0a0a}
 .sec5 .port1 .imgs .img {display: inline-block; width: 100%; }
 
 .sec5 .port2 { }
-.sec5 .port2 .sec5_text-wrap {float: right; width: 34%;  }
+.sec5 .port2 .sec5_text-wrap {float: right; width: 34%;}
 .sec5 .port2 h3{display: block; text-align:center;}
 .sec5 .port2 .caption {text-align:justify;}
 .sec5 .port2 .imgs  {display: inline-block; width:63%;}
-.sec5 .port2 .imgs .img { margin-right: 0.7%;}
+.sec5 .port2 .imgs .img {margin-right: 0.7%;}
 .sec5 .port2 .imgs .port2_img1 {width: 100%;}
 
 .sec5 .port3 {}
@@ -276,7 +277,7 @@ body {background: #0a0a0a}
 .sec5 .port6 .caption { box-sizing: border-box; line-height: 6vw; }
 
 
-/* sec3 layout */
+/* sec5 - port6 layout */
 .external {position: relative; width: 2500px; margin-top: 1.5vh; height: 63vh; color: #EEE3C1;}
 .external .horizontal-scroll-box  {overflow: hidden; width: 100%; height: 100%; top: 0px;}
 .external .cont {float: left; width: 400px; height: 100%; margin:0 1vw 0 0; padding: 0; box-sizing: border-box;}
@@ -289,7 +290,7 @@ body {background: #0a0a0a}
 
 
 
-/* sec3 port6_cont1 */
+/* sec5 - port6 _cont1 */
 .port6_ani-box > figure {margin: 0; padding: 0;}
 .port6_cont1 .port6_ani-box figcaption {
     margin: 0; padding: 0;
@@ -325,7 +326,7 @@ body {background: #0a0a0a}
 
 
 
-/* sec3 port6_cont2 */
+/* sec5 - port6 cont2 */
 .port6_cont2 .cont2_name {position: relative; font-size: 34px; font-weight: bold; padding-bottom: 15px;
 opacity: 1;  transition: opacity .8s cubic-bezier(.25,.46,.45,.94), transform .8s cubic-bezier(.25,.46,.45,.94)}
 
@@ -365,7 +366,7 @@ opacity: 1;  transition: opacity .8s cubic-bezier(.25,.46,.45,.94), transform .8
 
 
 
-/* sec3 port6_cont3 */
+/* sec5 - port6 cont3 */
 .port6_cont3 .cont3_name {position: relative; font-size: 34px; font-weight: bold; padding-bottom: 15px;
 opacity: 1;  transition: opacity .8s cubic-bezier(.25,.46,.45,.94), transform .8s cubic-bezier(.25,.46,.45,.94)}
     
@@ -436,7 +437,7 @@ opacity: 1;  transition: opacity .8s cubic-bezier(.25,.46,.45,.94), transform .8
 
 
 
-/* sec3 port6_cont4 */
+/* sec5 - port6 cont4 */
 .port6_cont4 .cont4_name {position: relative; font-size: 34px; font-weight: bold; padding-bottom: 15px;
 opacity: 1;  transition: opacity .8s cubic-bezier(.25,.46,.45,.94), transform .8s cubic-bezier(.25,.46,.45,.94)}
 
@@ -580,7 +581,7 @@ opacity: 1;  transition: opacity .8s cubic-bezier(.25,.46,.45,.94), transform .8
 
 
 
-/* sec3 port6_cont5 */
+/* sec5 - port6 cont5 */
 .port6_cont5 .cont5_name {position: relative; font-size: 34px; font-weight: bold; padding-bottom: 15px;
 opacity: 1;  transition: opacity .8s cubic-bezier(.25,.46,.45,.94), transform .8s cubic-bezier(.25,.46,.45,.94)}
 
@@ -661,7 +662,6 @@ opacity: 1;  transition: opacity .8s cubic-bezier(.25,.46,.45,.94), transform .8
     opacity: 1;
   }
 }
-
 .port6_cont5 .port6_ani-box .btn-wrap {position: absolute; display: flex; width: 50px; height: 50px; margin: 15px 0 0 335px; background-color: #fff; border-radius: 50%; font-family: 'Roboto', sans-serif;}
 .port6_cont5 .port6_ani-box .btn-wrap a {position: relative; color: #000; z-index: 1;  margin: 15px 0 0 11px;}
 
