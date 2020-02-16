@@ -1,3 +1,5 @@
+@font-face { font-family: 'GmarketSansLight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff'); font-weight: normal; font-style: normal; }
+
 /* layout */
 body {background: #000}
 #contents {}
@@ -96,7 +98,7 @@ body {background: #000}
 
 /* sec2 */
 .sec2 {margin-top: 20px;}
-.sec2 .phone-wrap {overflow: hidden;}
+.sec2 .phone-wrap {overflow: hidden; margin: 5vw 0;}
 .sec2 .phone-wrap > div {float: left; position: relative;
     width: 33.333%;
 }
@@ -105,7 +107,117 @@ body {background: #000}
     width: 20vw; height: 30vh; background: red;}
 .sec2 .phone-wrap > div img {width: 100%;}
 
+/* sec3 */
+.sec3 {padding:;}
+.sec3 .intro {position: relative;
+    color: #EEE3C1;
+    font-size: 1.4vw;
+    letter-spacing: 0;
+    line-height: 1.8vw;
+    padding: 4vw 0;
+    font-family: 'Orbitron', sans-serif; font-weight: 900; 
+    padding-left: 15vw;
+    text-align: justify;
+    text-transform: uppercase;
+}
+.sec3 h3 {
+    font-size: 2vw; line-height: 2vw; color: red;
+    font-family: 'Orbitron', sans-serif; font-weight: 900; 
+    position: absolute; left: 0; bottom: 4vw;
+}
+.sec3 .intro::before {
+    content: '';
+    width: 100%;
+    height: 5px; background: #EEE3C1;
+    position: absolute; left: 0; top: 0px;
+}
+.sec3 .intro:after {
+    content: '';  width: 100%;
+    height: 5px; background: #EEE3C1;
+    position: absolute; left: 0; bottom: 0px;
+}
 
+/* sec4 */
+.sec4 { }
+.sec4 .ani-text p {
+    text-align: left; 
+    font: bold 19.5vw/1 'Orbitron', sans-serif; 
+    color: #EEE3C1;
+    animation: text-shadow .75s linear infinite;
+    
+}
+.sec4 .ani-text p:last-child {text-align: right; padding-right: 5vw;}
+@keyframes text-shadow {
+    from,
+    19.9% {
+        text-shadow: 0 0 #ca0813, .1vw .1vw #ca0813, .2vw .2vw #ca0813, .3vw .3vw #ca0813, .4vw .4vw #ca0813, .5vw .5vw #ca0813, .5vw .5vw #FD138A, .6vw .6vw #FD138A, .7vw .7vw #FD138A, .8vw .8vw #FD138A, .9vw .9vw #FD138A, 1vw 1vw #FD138A, 1vw 1vw #fddb8f, 1.1vw 1.1vw #fddb8f, 1.2vw 1.2vw #fddb8f, 1.3vw 1.3vw #fddb8f, 1.4vw 1.4vw #fddb8f, 1.5vw 1.5vw #fddb8f, 1.5vw 1.5vw #F40000, 1.6vw 1.6vw #F40000, 1.7vw 1.7vw #F40000, 1.8vw 1.8vw #F40000, 1.9vw 1.9vw #F40000, 2vw 2vw #F40000, 2vw 2vw #28D58F, 2.1vw 2.1vw #28D58F, 2.2vw 2.2vw #28D58F, 2.3vw 2.3vw #28D58F, 2.4vw 2.4vw #28D58F, 2.5vw 2.5vw #28D58F, 2.5vw 2.5vw #ca0813, 2.6vw 2.6vw #ca0813, 2.7vw 2.7vw #ca0813, 2.8vw 2.8vw #ca0813, 2.9vw 2.9vw #ca0813, 3vw 3vw #ca0813, 3vw 3vw #FD138A, 3.1vw 3.1vw #FD138A, 3.2vw 3.2vw #FD138A, 3.3vw 3.3vw #FD138A, 3.4vw 3.4vw #FD138A, 3.5vw 3.5vw #FD138A, 3.5vw 3.5vw #fddb8f, 3.6vw 3.6vw #fddb8f, 3.7vw 3.7vw #fddb8f, 3.8vw 3.8vw #fddb8f, 3.9vw 3.9vw #fddb8f, 4vw 4vw #fddb8f, 4vw 4vw #F40000, 4.1vw 4.1vw #F40000, 4.2vw 4.2vw #F40000, 4.3vw 4.3vw #F40000, 4.4vw 4.4vw #F40000, 4.5vw 4.5vw #F40000, 4.5vw 4.5vw #28D58F, 4.6vw 4.6vw #28D58F, 4.7vw 4.7vw #28D58F, 4.8vw 4.8vw #28D58F, 4.9vw 4.9vw #28D58F, 5vw 5vw #28D58F;
+    }
+    20%,
+    39.9% {
+        text-shadow: 0 0 #28D58F, .1vw .1vw #28D58F, .2vw .2vw #28D58F, .3vw .3vw #28D58F, .4vw .4vw #28D58F, .5vw .5vw #28D58F, .5vw .5vw #ca0813, .6vw .6vw #ca0813, .7vw .7vw #ca0813, .8vw .8vw #ca0813, .9vw .9vw #ca0813, 1vw 1vw #ca0813, 1vw 1vw #FD138A, 1.1vw 1.1vw #FD138A, 1.2vw 1.2vw #FD138A, 1.3vw 1.3vw #FD138A, 1.4vw 1.4vw #FD138A, 1.5vw 1.5vw #FD138A, 1.5vw 1.5vw #fddb8f, 1.6vw 1.6vw #fddb8f, 1.7vw 1.7vw #fddb8f, 1.8vw 1.8vw #fddb8f, 1.9vw 1.9vw #fddb8f, 2vw 2vw #fddb8f, 2vw 2vw #F40000, 2.1vw 2.1vw #F40000, 2.2vw 2.2vw #F40000, 2.3vw 2.3vw #F40000, 2.4vw 2.4vw #F40000, 2.5vw 2.5vw #F40000, 2.5vw 2.5vw #28D58F, 2.6vw 2.6vw #28D58F, 2.7vw 2.7vw #28D58F, 2.8vw 2.8vw #28D58F, 2.9vw 2.9vw #28D58F, 3vw 3vw #28D58F, 3vw 3vw #ca0813, 3.1vw 3.1vw #ca0813, 3.2vw 3.2vw #ca0813, 3.3vw 3.3vw #ca0813, 3.4vw 3.4vw #ca0813, 3.5vw 3.5vw #ca0813, 3.5vw 3.5vw #FD138A, 3.6vw 3.6vw #FD138A, 3.7vw 3.7vw #FD138A, 3.8vw 3.8vw #FD138A, 3.9vw 3.9vw #FD138A, 4vw 4vw #FD138A, 4vw 4vw #fddb8f, 4.1vw 4.1vw #fddb8f, 4.2vw 4.2vw #fddb8f, 4.3vw 4.3vw #fddb8f, 4.4vw 4.4vw #fddb8f, 4.5vw 4.5vw #fddb8f, 4.5vw 4.5vw #F40000, 4.6vw 4.6vw #F40000, 4.7vw 4.7vw #F40000, 4.8vw 4.8vw #F40000, 4.9vw 4.9vw #F40000, 5vw 5vw #F40000;
+    }
+    40%,
+    59.9% {
+        text-shadow: 0 0 #F40000, .1vw .1vw #F40000, .2vw .2vw #F40000, .3vw .3vw #F40000, .4vw .4vw #F40000, .5vw .5vw #F40000, .5vw .5vw #28D58F, .6vw .6vw #28D58F, .7vw .7vw #28D58F, .8vw .8vw #28D58F, .9vw .9vw #28D58F, 1vw 1vw #28D58F, 1vw 1vw #ca0813, 1.1vw 1.1vw #ca0813, 1.2vw 1.2vw #ca0813, 1.3vw 1.3vw #ca0813, 1.4vw 1.4vw #ca0813, 1.5vw 1.5vw #ca0813, 1.5vw 1.5vw #FD138A, 1.6vw 1.6vw #FD138A, 1.7vw 1.7vw #FD138A, 1.8vw 1.8vw #FD138A, 1.9vw 1.9vw #FD138A, 2vw 2vw #FD138A, 2vw 2vw #fddb8f, 2.1vw 2.1vw #fddb8f, 2.2vw 2.2vw #fddb8f, 2.3vw 2.3vw #fddb8f, 2.4vw 2.4vw #fddb8f, 2.5vw 2.5vw #fddb8f, 2.5vw 2.5vw #F40000, 2.6vw 2.6vw #F40000, 2.7vw 2.7vw #F40000, 2.8vw 2.8vw #F40000, 2.9vw 2.9vw #F40000, 3vw 3vw #F40000, 3vw 3vw #28D58F, 3.1vw 3.1vw #28D58F, 3.2vw 3.2vw #28D58F, 3.3vw 3.3vw #28D58F, 3.4vw 3.4vw #28D58F, 3.5vw 3.5vw #28D58F, 3.5vw 3.5vw #ca0813, 3.6vw 3.6vw #ca0813, 3.7vw 3.7vw #ca0813, 3.8vw 3.8vw #ca0813, 3.9vw 3.9vw #ca0813, 4vw 4vw #ca0813, 4vw 4vw #FD138A, 4.1vw 4.1vw #FD138A, 4.2vw 4.2vw #FD138A, 4.3vw 4.3vw #FD138A, 4.4vw 4.4vw #FD138A, 4.5vw 4.5vw #FD138A, 4.5vw 4.5vw #fddb8f, 4.6vw 4.6vw #fddb8f, 4.7vw 4.7vw #fddb8f, 4.8vw 4.8vw #fddb8f, 4.9vw 4.9vw #fddb8f, 5vw 5vw #fddb8f;
+    }
+    60%,
+    79.9% {
+        text-shadow: 0 0 #fddb8f, .1vw .1vw #fddb8f, .2vw .2vw #fddb8f, .3vw .3vw #fddb8f, .4vw .4vw #fddb8f, .5vw .5vw #fddb8f, .5vw .5vw #F40000, .6vw .6vw #F40000, .7vw .7vw #F40000, .8vw .8vw #F40000, .9vw .9vw #F40000, 1vw 1vw #F40000, 1vw 1vw #28D58F, 1.1vw 1.1vw #28D58F, 1.2vw 1.2vw #28D58F, 1.3vw 1.3vw #28D58F, 1.4vw 1.4vw #28D58F, 1.5vw 1.5vw #28D58F, 1.5vw 1.5vw #ca0813, 1.6vw 1.6vw #ca0813, 1.7vw 1.7vw #ca0813, 1.8vw 1.8vw #ca0813, 1.9vw 1.9vw #ca0813, 2vw 2vw #ca0813, 2vw 2vw #FD138A, 2.1vw 2.1vw #FD138A, 2.2vw 2.2vw #FD138A, 2.3vw 2.3vw #FD138A, 2.4vw 2.4vw #FD138A, 2.5vw 2.5vw #FD138A, 2.5vw 2.5vw #fddb8f, 2.6vw 2.6vw #fddb8f, 2.7vw 2.7vw #fddb8f, 2.8vw 2.8vw #fddb8f, 2.9vw 2.9vw #fddb8f, 3vw 3vw #fddb8f, 3vw 3vw #F40000, 3.1vw 3.1vw #F40000, 3.2vw 3.2vw #F40000, 3.3vw 3.3vw #F40000, 3.4vw 3.4vw #F40000, 3.5vw 3.5vw #F40000, 3.5vw 3.5vw #28D58F, 3.6vw 3.6vw #28D58F, 3.7vw 3.7vw #28D58F, 3.8vw 3.8vw #28D58F, 3.9vw 3.9vw #28D58F, 4vw 4vw #28D58F, 4vw 4vw #ca0813, 4.1vw 4.1vw #ca0813, 4.2vw 4.2vw #ca0813, 4.3vw 4.3vw #ca0813, 4.4vw 4.4vw #ca0813, 4.5vw 4.5vw #ca0813, 4.5vw 4.5vw #FD138A, 4.6vw 4.6vw #FD138A, 4.7vw 4.7vw #FD138A, 4.8vw 4.8vw #FD138A, 4.9vw 4.9vw #FD138A, 5vw 5vw #FD138A;
+    }
+    80%,
+    to {
+        text-shadow: 0 0 #FD138A, .1vw .1vw #FD138A, .2vw .2vw #FD138A, .3vw .3vw #FD138A, .4vw .4vw #FD138A, .5vw .5vw #FD138A, .5vw .5vw #fddb8f, .6vw .6vw #fddb8f, .7vw .7vw #fddb8f, .8vw .8vw #fddb8f, .9vw .9vw #fddb8f, 1vw 1vw #fddb8f, 1vw 1vw #F40000, 1.1vw 1.1vw #F40000, 1.2vw 1.2vw #F40000, 1.3vw 1.3vw #F40000, 1.4vw 1.4vw #F40000, 1.5vw 1.5vw #F40000, 1.5vw 1.5vw #28D58F, 1.6vw 1.6vw #28D58F, 1.7vw 1.7vw #28D58F, 1.8vw 1.8vw #28D58F, 1.9vw 1.9vw #28D58F, 2vw 2vw #28D58F, 2vw 2vw #ca0813, 2.1vw 2.1vw #ca0813, 2.2vw 2.2vw #ca0813, 2.3vw 2.3vw #ca0813, 2.4vw 2.4vw #ca0813, 2.5vw 2.5vw #ca0813, 2.5vw 2.5vw #FD138A, 2.6vw 2.6vw #FD138A, 2.7vw 2.7vw #FD138A, 2.8vw 2.8vw #FD138A, 2.9vw 2.9vw #FD138A, 3vw 3vw #FD138A, 3vw 3vw #fddb8f, 3.1vw 3.1vw #fddb8f, 3.2vw 3.2vw #fddb8f, 3.3vw 3.3vw #fddb8f, 3.4vw 3.4vw #fddb8f, 3.5vw 3.5vw #fddb8f, 3.5vw 3.5vw #F40000, 3.6vw 3.6vw #F40000, 3.7vw 3.7vw #F40000, 3.8vw 3.8vw #F40000, 3.9vw 3.9vw #F40000, 4vw 4vw #F40000, 4vw 4vw #28D58F, 4.1vw 4.1vw #28D58F, 4.2vw 4.2vw #28D58F, 4.3vw 4.3vw #28D58F, 4.4vw 4.4vw #28D58F, 4.5vw 4.5vw #28D58F, 4.5vw 4.5vw #ca0813, 4.6vw 4.6vw #ca0813, 4.7vw 4.7vw #ca0813, 4.8vw 4.8vw #ca0813, 4.9vw 4.9vw #ca0813, 5vw 5vw #ca0813;
+    }
+}
+
+
+
+/* sec5 */
+.sec5 {margin-top: 6vw;}
+
+
+.site-wrap {}
+.site-wrap .site {min-height: 400px; margin: 3vw 0}
+
+.site-wrap .site {display: flex; padding: 3vw 0}
+.site-wrap .site .site-text {width: 25vw; padding-right: 5vw; }
+.site-wrap .site .site-img {width: 70vw; }
+.site-wrap .site .site-img img {width: 100%; }
+
+.site-wrap .site .site-text-num { 
+    font-size: 18vw; line-height: .71; color: #ca0813;
+    font-family: 'Orbitron', sans-serif; font-weight: bold;
+}
+.site-wrap .site .site-text-tit {
+    width: 100%; background: #fff; margin: 4vw 0 2vw 0; 
+    font-family: 'Orbitron', sans-serif; 
+    text-align: center; font-size: 2vw;
+}
+.site-wrap .site .site-text-desc {
+    font-family: 'GmarketSansLight'; 
+    color:#EEE3C1; font-size: 1.2vw; text-align: justify;
+}
+.site-wrap .site .site-text-desc a {
+    color:#EEE3C1; font-weight: bold; 
+    text-decoration: #ca0813 wavy underline;
+}
+
+
+
+
+/* line */
+.line {position: relative;}
+.line::before {
+    content: '';
+    width: 100%;
+    height: 5px; background: #EEE3C1;
+    position: absolute; left: 0; top: 0px;
+}
+.line:after {
+    content: '';  width: 100%;
+    height: 5px; background: #EEE3C1;
+    position: absolute; left: 0; bottom: 0px;
+}
 
 
 
