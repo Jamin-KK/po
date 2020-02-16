@@ -9,27 +9,19 @@
 //window popup
 $(".window").click(function(e){
     e.preventDefault();
-    //window.open("파일명", "팝업이름", "옵션설정");
-    //옵션 : left, top, width, height, status, toolbor, location, menubar, scrollbars, fullscreen, channelmode
-    window.open('sample_popup.html', 'popup01', 'width=800, height=563, left=50, top=50, scrollbars=0, toolbar=0, menubar=no');
+     window.open('sample_popup.html', 'popup01', 'width=800, height=563, left=50, top=50, scrollbars=0, toolbar=0, menubar=no');
 });
 
 
 //layer popup
 $(".layer").click(function(e){
     e.preventDefault();
-    // $("#layer").css("display","block");
-    // $("#modal").show();
-    $("#layer").fadeIn(200);
-    // $("#modal").slideDown();
-});
+     $("#layer").fadeIn(200);
+ });
 $("#layer .close").click(function(e){
     e.preventDefault();
-    // $("#layer").css("display","none");
-    // $("#modal").hide();
-    $("#layer").fadeOut(200);
-    // $("#modal").slideUp();
-});
+     $("#layer").fadeOut(200);
+ });
 
 
  //tab_menu
