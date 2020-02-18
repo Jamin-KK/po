@@ -9,7 +9,7 @@
     <meta name="author" content="webstoryboy">
     <meta name="description" content="메가박스 사이트 따라하면서 배우는 튜토리얼입니다.">
     <meta name="keywords" content="메가박스, 유투브, 영화, 최신영화, 영화관, CGV, 롯데시네마, 웹스토리보이, 웹스, 사이트 만들기, 따라하기, 이미지 슬라이드">
-    <title>메가박스 사이트 코딩하기 : 푸터 영역</title>
+    <title>web_c</title>
 
     <!-- css -->
     <link rel="stylesheet" href="assets/css/reset.css">
@@ -1404,9 +1404,7 @@
         var swiper = new Swiper('.swiper-container2',{
             slidesPerView: 4,
             spaceBetween: 24,
-//            mousewheel: {
-//                invert: true,
-//            },
+ 
             keyboard: {
                 enabled: true,
                 onlyInViewport: false,
@@ -1456,11 +1454,7 @@
         function tabList(e){
             e.preventDefault();       //#의 기능을 차단
             var target = $(this);
-            target.next().show().parent("li").addClass("active").siblings("li").removeClass("active").find("ul").hide();
-            //버튼을 클릭하면 ~ div를 보여주고
-            //부모의 li 태그에 클래스 추가하고
-            //형제의 li 태그에 클래스 제거하고
-            //제거한 자식의 div 태그를 숨겨줌 
+            target.next().show().parent("li").addClass("active").siblings("li").removeClass("active").find("ul").hide(); 
         }
 
         tabMenu.find("ul > li > a").click(tabList).focus(tabList);
