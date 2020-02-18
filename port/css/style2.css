@@ -1,20 +1,27 @@
 @font-face { font-family: 'GmarketSansLight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff'); font-weight: normal; font-style: normal; }
 
 /* layout */
-body {background: #000}
+body {}
 #contents {}
-#section1 {}
-#section2 {}
-#section3 {}
-#section4 {}
-#section5 {}
-#section6 {}
+#contents > section {position: relative;}
+#section1 { background: #000;}
+#section2 { background: #000;}
+#section3 { background: #000;}
+#section4 { background: #000;}
+#section5 { background: #000;}
+#section6 { background: #000;}
+#section7 {height: 4500px; }
+#section8 {height: 4500px; background: yellow;}
 
 /* container */
 .container {width: 1400px; margin: 0 auto; position: relative; background: rgba(0,0,0,0.3);}
 
 /* row */
 .row {padding: 0 20px;}
+
+/* scroll */
+.scroll {width: 40px; height: 40px; position: fixed; left: 10px; top: 10%; 
+color: #fff; background: rgba(255,255,255,0.4); text-align: center; line-height: 40px; z-index: 10000;}
 
 /* sec1 */
 .sec1 {}
@@ -174,11 +181,8 @@ body {background: #000}
 
 /* sec5 */
 .sec5 {margin-top: 6vw;}
-
-
 .site-wrap {}
 .site-wrap .site {min-height: 400px; margin: 3vw 0}
-
 .site-wrap .site {display: flex; padding: 3vw 0}
 .site-wrap .site .site-text {width: 25vw; padding-right: 5vw; }
 .site-wrap .site .site-img {width: 70vw; }
@@ -202,8 +206,17 @@ body {background: #000}
     text-decoration: #ca0813 wavy underline;
 }
 
+/* sec7 */
+.sec7 {margin-top: 6vw;}
 
 
+/* sec8 */
+.sec8 {
+    position: fixed; left: 0; top: 0; z-index: -1;
+    width: 4000px; height: 100vh; background: pink;}
+
+.ani-wrap {width: 4000px; height: 100vh;}
+.ani-wrap .ani {float: left; margin-top: 20px; margin-left: 20px;  margin-right: 40px; width: 500px; height: 400px; background: #444;}
 
 /* line */
 .line {position: relative;}
