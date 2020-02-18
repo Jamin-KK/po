@@ -277,7 +277,7 @@ body {background: #0a0a0a}
 .sec5 .port6 .caption { box-sizing: border-box; line-height: 6vw; }
 
 
-/* sec5 - port6 layout */
+/*port6 layout */
 .external {position: relative; width: 2500px; margin-top: 1.5vh; height: 63vh; color: #EEE3C1;}
 .external .horizontal-scroll-box  {overflow: hidden; width: 100%; height: 100%; top: 0px;}
 .external .cont {float: left; width: 400px; height: 100%; margin:0 1vw 0 0; padding: 0; box-sizing: border-box;}
@@ -290,7 +290,7 @@ body {background: #0a0a0a}
 
 
 
-/* sec5 - port6 _cont1 */
+/* sec5>port6 cont1 */
 .port6_ani-box > figure {margin: 0; padding: 0;}
 .port6_cont1 .port6_ani-box figcaption {
     margin: 0; padding: 0;
@@ -326,7 +326,7 @@ body {background: #0a0a0a}
 
 
 
-/* sec5 - port6 cont2 */
+/*sec5>port6 cont2 */
 .port6_cont2 .cont2_name {position: relative; font-size: 34px; font-weight: bold; padding-bottom: 15px;
 opacity: 1;  transition: opacity .8s cubic-bezier(.25,.46,.45,.94), transform .8s cubic-bezier(.25,.46,.45,.94)}
 
@@ -366,12 +366,10 @@ opacity: 1;  transition: opacity .8s cubic-bezier(.25,.46,.45,.94), transform .8
 
 
 
-/* sec5 - port6 cont3 */
+/*sec5>port6 cont3 */
 .port6_cont3 .cont3_name {position: relative; font-size: 34px; font-weight: bold; padding-bottom: 15px;
 opacity: 1;  transition: opacity .8s cubic-bezier(.25,.46,.45,.94), transform .8s cubic-bezier(.25,.46,.45,.94)}
     
-
-
 @keyframes rotate {
     0%   { transform: rotateX(0) rotateZ(0); }
     20%  { transform: rotateX(60deg) rotateZ(0);    }
@@ -437,7 +435,7 @@ opacity: 1;  transition: opacity .8s cubic-bezier(.25,.46,.45,.94), transform .8
 
 
 
-/* sec5 - port6 cont4 */
+/* sec5>port6 cont4 */
 .port6_cont4 .cont4_name {position: relative; font-size: 34px; font-weight: bold; padding-bottom: 15px;
 opacity: 1;  transition: opacity .8s cubic-bezier(.25,.46,.45,.94), transform .8s cubic-bezier(.25,.46,.45,.94)}
 
@@ -581,10 +579,9 @@ opacity: 1;  transition: opacity .8s cubic-bezier(.25,.46,.45,.94), transform .8
 
 
 
-/* sec5 - port6 cont5 */
+/* sec5>port6 cont5 */
 .port6_cont5 .cont5_name {position: relative; font-size: 34px; font-weight: bold; padding-bottom: 15px;
 opacity: 1;  transition: opacity .8s cubic-bezier(.25,.46,.45,.94), transform .8s cubic-bezier(.25,.46,.45,.94)}
-
 
 .port6_cont5 .port6_ani-box .cont_ani {}
 
