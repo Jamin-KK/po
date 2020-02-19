@@ -60,7 +60,7 @@ tlOpen.add("preOpen")
   ease: Power4.easeInOut
 }, "open")
 .to(menuBottom, 0.8, {
-  y: "-114%",
+  y: "-134%",
   ease: Power4.easeInOut
 }, "open")
 .fromTo(menu, 0.6, {
