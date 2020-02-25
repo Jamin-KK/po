@@ -280,18 +280,17 @@ body {background: #0a0a0a}
 /*port6 layout */
 .external {position: relative; width: 2500px; margin-top: 1.5vh; height: 63vh; color: #EEE3C1;}
 .external .horizontal-scroll-box  {overflow: hidden; width: 100%; height: 100%; top: 0px;}
-.external .cont {float: left; width: 400px; height: 100%; margin:0 1vw 0 0; padding: 0; box-sizing: border-box;}
-.external .cont h5 {height: 5vh; font-size: 2.8vw; line-height: 1;  color: #EEE3C1; ;             background-color:rgba(255, 255, 255, 0.1);}
-.external .cont .cont_text {overflow: hidden; height: 3vh; font-size: 3vh; line-height: 1;    background-color:rgba(255, 255, 255, 0.1);}
-.external .cont .port6_ani-box {position: relative; width: 100%; height: 62vh;  overflow: hidden;
-    opacity: 1;  transition: opacity .8s 0.6s cubic-bezier(.25,.46,.45,.94), transform .8s cubic-bezier(.25,.46,.45,.94)}
-.external .cont .port6_ani-box .cont_ani {position: absolute; width: 100%; height: 100%; background:radial-gradient(#ca0813, #ca0813); background-size: cover; transform: scale(1); display: flex; align-items: center; justify-content: center;}
+.external .ani {float: left; width: 400px; height: 100%; margin:0 1vw 0 0; padding: 0; box-sizing: border-box;}
+.external .ani h5 {height: 5vh; font-size: 2.8vw; line-height: 1;  color: #EEE3C1; ;             background-color:rgba(255, 255, 255, 0.1);}
+.external .ani .ani_text {overflow: hidden; height: 3vh; font-size: 3vh; line-height: 1;    background-color:rgba(255, 255, 255, 0.1);}
+.external .ani .ani_box {position: relative; width: 100%; height: 62vh;  overflow: hidden; border: 2px solid yellow;}
+.external .ani .ani-box .ani_cont {position: absolute; width: 100%; height: 100%; background:radial-gradient(#ca0813, #ca0813); background-size: cover; transform: scale(1); display: flex; align-items: center; justify-content: center; border:5px solid pink;}
 
 
 
 
 /* sec5>port6 cont1 */
-.port6_ani-box > figure {margin: 0; padding: 0;}
+.port6_ani-box > figure {width: 100%; height: 100%; margin: 0; padding: 0;}
 .port6_cont1 .port6_ani-box figcaption {
     margin: 0; padding: 0;
     position: absolute;
