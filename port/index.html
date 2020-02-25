@@ -7,35 +7,22 @@
     <meta name="description" content="Web Publishing portfolio site">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="responsive web, Webstandard, WebPublisher, WebAccessibility, HTML5">
-    <title>oo0ooo</title>
-    <!-- style -->
+
+    <title>권자민 포트폴리오</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- Facebook meta tags -->
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="making responsive site" />
-    <meta property="og:url" content="http://oo0ooo02.dothome.co.kr/port/index7.html" />
-    <meta property="og:image" content="http://oo0ooo02.dothome.co.kr/port/img/daily.png" />
-    <meta property="og:site_name" content="Web Publishing portfolio(site_name)" />
-    <meta property="og:description" content="making Web Publishing portfolio(description)" />
-
-    <!-- font -->
-    <link href="https://fonts.googleapis.com/css?family=Heebo:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="img/favicon.jpg">
+    <!-- font -->√
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Public+Sans:100,300,500,700,900&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css?family=Orbitron:400,700,900|Public+Sans:100,300,500,700,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/94b8e6bbb3.js" crossorigin="anonymous"></script>
-    <!-- chat  -->
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
-    <link rel='stylesheet'
-        href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css'>
-    <link rel="stylesheet" href="css/chat.css">
-    <!-- menuBox  -->
-    <link rel="stylesheet" href="test/5_mobilemenu/css/style.css">
-    <!-- PORT7 horizontal-scroll -->
-    <!-- <link rel="stylesheet" href="test/13_scroll-animation-with-css-week-32-52/dist/style.css"> -->
+
     <!-- HTLM5shiv ie6~8 -->
     <!--[if lt IE 9]> 
         <script src="js/html5shiv.min.js"></script>
@@ -45,30 +32,29 @@
     <![endif]-->
 </head>
 
-
-
-
-
-
-
 <body>
-    <div class="container">
+
+    <div class="scroll">0</div>
+
+
+    <!--  section1_title ------------------------------------  -->
+    <div id="contents">
         <section id="section1">
-            <h2 class="ir_su"> section1_title</h2>
+            <h2 class="ir_su">section1_title</h2>
             <div class="container">
                 <div class="row">
                     <div class="sec1">
                         <div class="text-wrap">
                             <div class="top-menu">
                                 <ul>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Github</a></li>
-                                    <li><a href="#">Email</a></li>
+                                    <li><a href="https://oo0ooo0.tistory.com/" target="_blank">Blog</a></li>
+                                    <li><a href="mailto:kkjjajja@gmail.com" target="_blank">Email</a></li>
                                 </ul>
                             </div>
-                            <h1>
-                                <svg class="svgWrap" viewBox="0 0 1000 550">
-                                    <text class="aniText" x="50%" y="50%" dy=".35em" text-anchor="middle">daily</text>
+                            <h1 class="line">
+                                <svg class="svgWrap" viewBox="0 0 1000 550" xmlns='http://www.w3.org/2000/svg' version='1.1'>
+                                    <text class="aniText" font-size='210px' x="50%" y="50%" dy=".35em"
+                                        text-anchor="middle">portfolio</text>
                                 </svg>
                                 <span class="mail">web publisher || <a href="mailto:kkjjajja@gmail.com"
                                         target="blank">kkjjajja@gmail.com</a></span>
@@ -79,15 +65,19 @@
             </div>
         </section>
         <!-- //section1 -->
+
+
+
+        <!--  section2_mobileAnimation ------------------------------------  -->
         <section id="section2">
             <h2 class="ir_su"> section2_mobile-animation</h2>
             <div class="container">
                 <div class="row">
                     <div class="sec2">
                         <div class="phone-wrap">
-                            <!-- /*--------------------sec2>ani1:chat--------------------*/ -->
+                            <!--  sec2>ani1:chat  -->
                             <div class="phone1">
-                                <img src="img/ipho_w1_nocuser.svg" alt="">
+                                <img src="img/ipho_w1_nocuser.svg" alt="IPhone_Image">
                                 <div class="box box1">
 
                                     <div class="chat">
@@ -135,10 +125,9 @@
                                     <div class="bg"></div>
                                 </div>
                             </div>
-
-                            <!-- /*--------------------sec2>ani2:mobileMenu--------------------*/ -->
+                            <!--  sec2>ani2:mobileMenu  -->
                             <div class="phone2">
-                                <img src="img/ipho_w2.svg" alt="">
+                                <img src="img/ipho_w1_nocuser.svg" alt="IPhone_Image">
                                 <div class="box box2">
                                     <div class="state-bar">
                                         <div class="connection"> <i class="fas fa-circle"></i> <i
@@ -152,7 +141,6 @@
                                         <div class="battery"><i class="fas fa-battery-three-quarters"></i></div>
                                     </div>
                                     <div class="menuBox">
-
                                         <span class="menu-trigger">
                                             <i class="menu-trigger-bar top"></i>
                                             <i class="menu-trigger-bar middle"></i>
@@ -164,10 +152,6 @@
                                         </span>
                                         <span class="logo">
                                             <p class="logo-info">click "trigger"</p>
-                                            <!-- <span>
-                                                ⬢
-                                                <i class="logo-title">UI</i>
-                                            </span> -->
                                         </span>
                                         <div class="inner-container">
                                             <i class="menu-bg top"></i>
@@ -191,15 +175,11 @@
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
-
-
-
-                            <!-- /*--------------------sec2>ani3:calculator--------------------*/ -->
+                            <!--  sec2>ani3:calculator  -->
                             <div class="phone3">
-                                <img src="img/ipho_w2.svg" alt="">
+                                <img src="img/ipho_w1_nocuser.svg" alt="IPhone_Image">
                                 <div class="box box3">
                                     <div class="state-bar">
                                         <div class="connection"> <i class="fas fa-circle"></i> <i
@@ -238,345 +218,261 @@
                 </div>
             </div>
         </section>
-        <!-- //section2 ------------------------------------------>
+        <!-- //section2_mobileAnimation ------------------------------------------>
 
 
 
-
-
-
+        <!-- section3_blog ------------------------------------------>
         <section id="section3">
-            <h2 class="ir_su"> section3_about</h2>
+            <h2 class="ir_su"> section3_blog</h2>
             <div class="container">
                 <div class="row">
-                    <div class="sec3 line">
-                        <div class="sec3_left"> <a href="#">Visit<br>github<br>page</a></div>
-                        <div class="sec3_right">
-                            meeting everyday life, countless examples of website. new veraaty among them have eyes that
-                            can dicover nice and observing discovering.<br>
+                    <div class="sec3">
+                        <div class="intro line">
+                            <a href="https://oo0ooo0.tistory.com/" target="_blank">Visit<br>blog</a>
+                            Every day we watch new technologies and changes in computer language.I always try new things
+                            to keep up with the change.
                             experiencing technical skills || html css js jquery xd photoshop illustrator excel
                             powerpoint
                         </div>
-                        <p class="sec3_left_mo"> <a href="#">Visit github page</a></p>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- //section3 ------------------------------------------>
-
-
-
-
+        <!-- section3_blog ------------------------------------------>
 
         <section id="section4">
-            <h2 class="ir_su">section4_text animation</h2>
             <div class="container">
                 <div class="row">
                     <div class="sec4">
-                        <h4>DayDay</h4>
-                        <h4>DayDay</h4>
-                        <!-- <h4>DayDay</h4> -->
+                        <div class="ani-text">
+                            <p>WEB</p>
+                            <p>SITE</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- //section4 ------------------------------------------>
-
-
-
-
+        <!-- //section4 -->
 
         <section id="section5">
-            <h2 class="ir_su">section5: portfolio list</h2>
             <div class="container">
                 <div class="row">
                     <div class="sec5">
-                        <article id="" class="port1 line">
-                            <div class="sec5_text-wrap">
-                                <h3>1</h3>
-                                <p class="caption">
-                                    <mark>&nbsp;standard web site&nbsp;&nbsp;&nbsp;
-                                    </mark> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi voluptas adipisci error maiores ipsa laboriosam fuga 
-                                    <!-- 웹 표준을 준수하여 만든 웹 페이지 입니다. slick을 이용한 배너와 라이트박스 생성 플러그인을 사용하여 배너와 이미지에 동적인 부분을 더했습니다. HTML, CSS, JQUERY -->
-                                    <!-- under any situation,
-                                    working with the standards of web is neseccery.<br>
-                                    i know that. and for flexible choing in any context, will consider and observe new
-                                    changes every day. -->
-                                </p>
-                            </div>
-                            <div class="imgs">
-                                <img class="port1_img1 img" src="img/Mockup-imac.png.svg" alt="imac image">
-                            </div>
-                        </article>
-                        <!-- //portfolio1 -->
-
-
-                        <article class="port2">
-                            <div class="sec5_text-wrap">
-                                <h3>2</h3>
-                                <p class="caption">
-                                    <mark>Responsive website</mark> 
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius rem cupiditate dicta ratione quaerat accusamus. 
-                                    <!-- 화면이 다양한 기기에 맞춰 조절이 되는 반응형 웹 사이트입니다. SNS로 공유하기 탭 등 다양한 스크립트를 특징으로한 반응형 웹 페이지 입니다.
-                                    HTML, CSS, JQUERY -->
-                                    <!-- It is important to make the website considering each devices and web browser. try to
-                                    ensure that users are provided with the same information in each environment. -->
-                                </p>
-                            </div>
-                            <div class="imgs">
-                                <img class="port2_img1 img" src="img/Mockup-imac.png.svg" alt="imac image">
-                            </div>
-                        </article>
-                        <!-- //portfolio2 -->
-
-
-
-                        <article class="port3 line">
-                            <div class="sec5_text-wrap">
-                                <h3>3</h3>
-                                <p class="caption">
-                                    <mark>commercial web copy</mark> 
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos atque id reprehenderit reiciendis aliquam. Dolores quam ea nam sed, perspiciatis fuga praesentium, repellat 
-                                    <!-- 이미지 슬라이더, 탭메뉴, 모달 등 다양한 스크립트 요소를 활용하여 반응형 작업을 진행했습니다.  wiper플러그인을 사용한 배너와 차트 탭 스크립트와 Swiper CSS효과를 특징으로한 반응형 사이트 입니다.
-                                    HTML, CSS, JQUERY                                 -->
-                                </p>
-                            </div>
-                            <div class="imgs">
-                                <img class="port3_img1 img" src="img/Mockup-imac.png.svg" alt="imac image">
-                                <img class="port3_img2 img" src="img/ipho_w1_red.svg" alt="ipad image">
-                                <img class="port3_img3 img" src="img/Mockup-Galaxy-S10-715x715_red.png" alt="handy image">
-                            </div>
-                        </article>
-                        <!-- //portfolio3 -->
-
-
-                        
-                        <article class="port7 line">
-                            <div class="sec5_text-wrap">
-                            <h3>4</h3>
-                            <p class="caption"> <mark>Js animation</mark>
-                                Lorem ipsum dolor sit amet consectetur oeefl.  
-                            </p>
-                            </div>
-                            <div class="horizontal-scroll">
-                                <div class="external">
-                                    <div class="horizontal-scroll-box fixed">
-                                 <!-- <div class="sec3"> -->
-                                    <!-- <div class="box1 fixed"> -->
-                                        <div class="port7_cont1 cont">
-                                            <h5>#001</h5>
-                                            <div class="cont_text">
-                                                html css jquery
-                                            </div>
-                                            <div class="port7_ani-box"
-                                            data-6755="transform:scale(1.2)"
-                                            data-6855="transform:scale(1);" >
-                                                <figure>
-                                                    <div class="cont_ani"
-                                                    data-6955="transform:scale(1.5) "
-                                                    data-7055="transform:scale(1); ">
-                                                    <figcaption>
-                                                        <a href="http://sunmi2209.dothome.co.kr/nike/NIKE.html"><p>Hover<em>Here</em></p></a>
-                                                    </figcaption>
-                                                        </div>
-                        
-                                                </figure>
-                                            </div>
-                                        </div>
-                                        <!-- //port7_cont1 -->
-                                    
-                                        <div class="port7_cont2 cont">
-                                            <h5>#002</h5>
-                                            <div class="cont_text">
-                                                html css
-                                            </div>
-                                            <div class=port7_ani-box 
-                                                data-6755="transform:scale(1.2)"
-                                                data-6855="transform:scale(1);" >
-                                                <div class="cont_ani"
-                                                data-6955="transform:scale(1.5) "
-                                                data-7055="transform:scale(1); ">
-                                                                        <div class="watch-face">
-                                                        <div class="circle"></div>
-                                                        <div class="circle"></div>
-                                                        <div class="circle"></div>
-                                                        <div class="circle"></div>
-                                                        <div class="circle"></div>
-                                                        <div class="circle"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- //port7_cont2 -->
-                                        <div class="port7_cont3 cont">
-                                            <h5>#003</h5>
-                                            <div class="cont_text">
-                                                html css
-                                            </div>
-                                            <div class="port7_ani-box">
-                                                <div class="cont_ani"
-                                                    data-6955="transform:scale(1.5) "
-                                                    data-7055="transform:scale(1); ">
-                                                
-                                                    <div class="frame">
-                                                      <div class="center">
-                                                            <div class="circle">
-                                                                <div class="side"></div>
-                                                                <div class="side"></div>
-                                                                <div class="side"></div>
-                                                                <div class="side"></div>
-                                                                <div class="side"></div>
-                                                                <div class="side"></div>
-                                                            </div>
-                                                      </div>
-                                                    </div>
-                                                </div>    
-                                                <!-- //img_box3 -->
-                                            </div>
-                                            <!-- //img_box3 -->
-                                        </div>
-                                        <!-- //port7_cont3 -->
-                                        <div class="port7_cont4 cont">
-                                            <h5>#004</h5>
-                                            <div class="cont_text">
-                                                html css
-                                            </div>
-                                            <div class="port7_ani-box">
-                                                <div class="cont_ani"
-                                                    data-7155="transform:scale(1.5) "
-                                                    data-7255="transform:scale(1); ">
-                                                    <div class="loader">
-                                                      <div class="box"></div>
-                                                      <div class="box"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- //port7_cont4 -->
-                                        </div>
-                                        <!-- //port7_cont4 -->
-                                        <div class="port7_cont5 cont">
-                                            
-                                            <h5>#005</h5>
-                                            <div class="cont_text">
-                                                html css
-                                            <div class="port7_ani-box">
-                                                <div class="cont_ani"
-                                                    data-7355="transform:scale(1.5) "
-                                                    data-7455="transform:scale(1); ">
-                                                    <div id="container">
-                                                      <div class='wrap' id='wrap1'>
-                                                            <div class='ball' id='ball1'></div>
-                                                      </div>
-                        
-                                                      <div class='wrap' id='wrap2'>
-                                                            <div class='ball' id='ball2'></div>
-                                                      </div>
-                        
-                                                      <div class='wrap' id='wrap3'>
-                                                            <div class='ball' id='ball3'></div>
-                                                      </div>
-                        
-                                                      <div class='wrap' id='wrap4'>
-                                                            <div class='ball' id='ball4'></div>
-                                                      </div>
-                                                      <div class='wrap' id='wrap5'>
-                                                            <div class='ball' id='ball5'></div>
-                                                      </div>
-                        
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- //port7_cont5 -->
-                                    </div>
-                                    <!-- //box1 -->
+                        <div class="site-wrap">
+                            <div class="site site1 line">
+                                <div class="site-text">
+                                    <span class="site-text-num">01</span>
+                                    <h3 class="site-text-tit">Webstandard</h3>
+                                    <p class="site-text-desc">웹 표준을 준수하여 만든 웹 표준 사이트 입니다. 슬릭 제이쿼리 플러그인을 이용하여 배너를 완성하였고,
+                                        크로스브라우징을 준수하여 익스프롤러 9버전부터 완벽하게 나오도록 설정하였습니다. 웹 지침서를 바탕으로 스킵메뉴 및 이미지 최적화등 웹 표준을
+                                        준수하였습니다. <a href="http://oo0ooo02.dothome.co.kr/web_s/index.html" target="_blank">사이트 보러가기</a>
+                                    </p>
                                 </div>
-                                <!-- // external -->
-                            </div>    
-                            <!-- //horizontal-scroll -->
-
-
-                            <!-- <ul class="check_li">
-                                <li><a href="">Reference page utilized</a></li>
-                                <li><a href="">javascript.info</a></li>
-                                <li><a href="">webstoryboy.co.kr</a></li>
-                                <li><a href="">khanacademy.org</a></li>
-                                <li><a href="">openprocessing.org</a></li>
-                            </ul> -->
-                        </article>
-                        <!-- //portfolio3 -->
+                                <div class="site-img">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0vw" y="0vw" width="100%"
+                                        viewBox="0 0 719.91 579.928" enable-background="new 0 0 719.91 579.928"
+                                        xml:space="preserve">
+                                        <polyline fill="#D1000A"
+                                            points="289,497.5 268.5,569 242,575.5 242,579.928 480,579.928 480,574.5 455.5,569 433.5,497.5 " />
+                                        <path fill="#D1000A" d="M702.91,0H17C7.611,0,0,7.611,0,17v461c0,9.389,7.611,17,17,17h685.91c9.389,0,17-7.611,17-17V17
+	C719.91,7.611,712.299,0,702.91,0z M362.5,478.625c-9.941,0-18-8.059-18-18s8.059-18,18-18s18,8.059,18,18
+	S372.441,478.625,362.5,478.625z" />
+                                        <circle fill="#D1000A" cx="362.5" cy="460.625" r="16.5" />
+                                    </svg>
+                                    <video controls>
+                                        <source src="img/video_web_s.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="site site2 line">
+                                <div class="site-text">
+                                    <span class="site-text-num">02</span>
+                                    <h3 class="site-text-tit">Commercial Web copy</h3>
+                                    <p class="site-text-desc">이미지 슬라이더, 탭메뉴, 모달 등 다양한 스크립트 요소를 활용하여 반응형 작업을 진행했습니다.
+                                        swiper플러그인을 사용한 배너, 차트, 탭, 스크립트와 CSS효과를 특징으로한 반응형 사이트 입니다.
+                                        <a href="http://oo0ooo02.dothome.co.kr/web_c/index.html" target="_blank">사이트 보러가기</a></p>
+                                </div>
+                                <div class="site-img">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0vw" y="0vw" width="100%"
+                                        viewBox="0 0 719.91 579.928" enable-background="new 0 0 719.91 579.928"
+                                        xml:space="preserve">
+                                        <polyline fill="#D1000A"
+                                            points="289,497.5 268.5,569 242,575.5 242,579.928 480,579.928 480,574.5 455.5,569 433.5,497.5 " />
+                                        <path fill="#D1000A" d="M702.91,0H17C7.611,0,0,7.611,0,17v461c0,9.389,7.611,17,17,17h685.91c9.389,0,17-7.611,17-17V17
+	C719.91,7.611,712.299,0,702.91,0z M362.5,478.625c-9.941,0-18-8.059-18-18s8.059-18,18-18s18,8.059,18,18
+	S372.441,478.625,362.5,478.625z" />
+                                        <circle fill="#D1000A" cx="362.5" cy="460.625" r="16.5" />
+                                    </svg>
+                                    <video controls>
+                                        <source src="img/video_mega.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="site site3 line">
+                                <div class="site-text">
+                                    <span class="site-text-num">03</span>
+                                    <h3 class="site-text-tit">remake BOOSTCAMP</h3>
+                                    <p class="site-text-desc">기존 웹 사이트를 참조하여 반응형 버전으로 재구성하었습니다. 미디어 쿼리를 이용한 반응형 작업을 진행한
+                                        사이트입니다. 크로스 브라우징은 익스플로러 9버전부터 지원합니다. <br>
+                                        <a href="http://oo0ooo02.dothome.co.kr/web_c/index.html" target="_blank">사이트 보러가기</a></p>
+                                </div>
+                                <div class="site-img">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0vw" y="0vw" width="100%"
+                                        viewBox="0 0 719.91 579.928" enable-background="new 0 0 719.91 579.928"
+                                        xml:space="preserve">
+                                        <polyline fill="#D1000A"
+                                            points="289,497.5 268.5,569 242,575.5 242,579.928 480,579.928 480,574.5 455.5,569 433.5,497.5 " />
+                                        <path fill="#D1000A" d="M702.91,0H17C7.611,0,0,7.611,0,17v461c0,9.389,7.611,17,17,17h685.91c9.389,0,17-7.611,17-17V17
+	C719.91,7.611,712.299,0,702.91,0z M362.5,478.625c-9.941,0-18-8.059-18-18s8.059-18,18-18s18,8.059,18,18
+	S372.441,478.625,362.5,478.625z" />
+                                        <circle fill="#D1000A" cx="362.5" cy="460.625" r="16.5" />
+                                    </svg>
+                                    <video controls>
+                                        <source src="img/video_boost.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="site site4 line">
+                                <div class="site-text">
+                                    <span class="site-text-num">04</span>
+                                    <h3 class="site-text-tit">remake AiHackathon</h3>
+                                    <p class="site-text-desc">기존 웹 사이트를 참조하여 반응형 버전으로 재구성하었습니다. 미디어 쿼리를 이용한 반응형 작업을
+                                        진행였고, slick을 이용하여 반응형 겔러리를 제작했습니다.
+                                        <a href="https://jamin-kk.github.io/aihackathon2018_copy_responsive.ver/" target="_blank">사이트
+                                            보러가기</a></p>
+                                </div>
+                                <div class="site-img">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0vw" y="0vw" width="100%"
+                                        viewBox="0 0 719.91 579.928" enable-background="new 0 0 719.91 579.928"
+                                        xml:space="preserve">
+                                        <polyline fill="#D1000A"
+                                            points="289,497.5 268.5,569 242,575.5 242,579.928 480,579.928 480,574.5 455.5,569 433.5,497.5 " />
+                                        <path fill="#D1000A" d="M702.91,0H17C7.611,0,0,7.611,0,17v461c0,9.389,7.611,17,17,17h685.91c9.389,0,17-7.611,17-17V17
+	C719.91,7.611,712.299,0,702.91,0z M362.5,478.625c-9.941,0-18-8.059-18-18s8.059-18,18-18s18,8.059,18,18
+	S372.441,478.625,362.5,478.625z" />
+                                        <circle fill="#D1000A" cx="362.5" cy="460.625" r="16.5" />
+                                    </svg>
+                                    <video controls>
+                                        <source src="img/video_ai.mp4 " type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="site site5 line">
+                                <div class="site-text">
+                                    <span class="site-text-num">05</span>
+                                    <h3 class="site-text-tit">responsive Web</h3>
+                                    <p class="site-text-desc">화면이 다양한 기기에 맞춰 조절이 되는 반응형 웹 사이트입니다. SNS로 공유하기 탭 등 다양한
+                                        스크립트를 특징으로한 반응형 웹 페이지 입니다. <br>
+                                        <a href="http://oo0ooo02.dothome.co.kr/web_r/index.html" target="_blank">사이트 보러가기</a></p>
+                                </div>
+                                <div class="site-img">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0vw" y="0vw" width="100%"
+                                        viewBox="0 0 719.91 579.928" enable-background="new 0 0 719.91 579.928"
+                                        xml:space="preserve">
+                                        <polyline fill="#D1000A"
+                                            points="289,497.5 268.5,569 242,575.5 242,579.928 480,579.928 480,574.5 455.5,569 433.5,497.5 " />
+                                        <path fill="#D1000A" d="M702.91,0H17C7.611,0,0,7.611,0,17v461c0,9.389,7.611,17,17,17h685.91c9.389,0,17-7.611,17-17V17
+	C719.91,7.611,712.299,0,702.91,0z M362.5,478.625c-9.941,0-18-8.059-18-18s8.059-18,18-18s18,8.059,18,18
+	S372.441,478.625,362.5,478.625z" />
+                                        <circle fill="#D1000A" cx="362.5" cy="460.625" r="16.5" />
+                                    </svg>
+                                    <video controls>
+                                        <source src="img/video_web_r.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- //section5 ------------------------------------------>
+        <!-- //section5 -->
 
 
-
-
-
-        <footer id="section6">
-            <h2 class="ir_su">section6_footer</h2>
+        <section id="contact">
             <div class="container">
-                <div class="row ">
-                    <div class="footer">
-                       
-                        <div class="link1 line">
-                            <ul>
-                                <li class="link1_l">
-                                    <ul>
-                                        <li><a href="#">web standard</a></li>
-                                        <li>publishing</li>
-                                    </ul>
-                                </li>
-                                <li class="link1_l">
-                                    <ul>
-                                        <li><a href="#">responsive web </a></li>
-                                        <li>design</li>
-                                    </ul>
-                                </li>
-                                <li class="link1_l">
-                                    <ul>
-                                        <li><a href="#">javascript/jquery</a></li>
-                                        <li>animation</li>
-                                    </ul>
-                                </li>
-                            </ul>
+                <div class="row">
+                    <div class="sec8">
+                        <div class="line">
+                            <div class="miniProfile animated fadeIn delay-.5s">
+                                <p class="title">
+                                    WEB PUBLISHER
+                                </p>
+                                <!--.title-->
+                                <p class="name">
+                                    <span>권자민</span> KWON JAMIN
+                                </p>
+                                <!--.name-->
+                                <p class="email">
+                                    kkjajjja@gmail.com
+                                </p>
+                                <!--.email-->
+                            </div>
+                            <div class="footer">
+                                <p>Copyrightⓒ2020. webpublisher.권자민.All rights reserved.</p>
+                                <p>본 사이트는 상업적 목적이 아닌 webpublisher. 권자민 개인포트폴리오 사이트로 제작되었습니다.<br>일부 이미지 및 폰트 등은 그 출처가 따로
+                                    있음을
+                                    밝힙니다.</p>
+                                <p>해당 사이트는 1920*1080해상도에 최적화 되었습니다.</p>
+                            </div>
+                            <!--.footer-->
                         </div>
-                        <div class="link2">
-                            <p class="link2_l">visit on the github page</p>
-                            <p class="link2_r"><a href="#">----></a></p>
-                        </div>
+                        <!--.line-->
                     </div>
+                    <!--.sec8-->
                 </div>
+                <!--.row-->
             </div>
-        </footer>
-        <!-- //section6 footer ------------------------------------------>
+            <!--.container-->
+        </section>
+        <!-- //contact -->
+
+
+
+
+
     </div>
     <!-- //contents -->
-
 
     <!-- script  -->
     <script src="js/jquery.min_1.12.4.js"></script>
     <script src="js/jquery-ui-1.12.1.min.js"></script>
     <script src="js/TweenMax.min.js"></script>
     <script src="js/skrollr.min.js"></script>
-
     <!-- chat  -->
     <script
         src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js'></script>
     <script src="js/chat.js"></script>
-
     <!-- calculator  -->
     <script src="js/calculator.js"></script>
-
     <!-- 5_mobilemenu  -->
     <script src="test/5_mobilemenu/js/index.js"></script>
 
-
     <script>
+        // skrollr
+        var s = skrollr.init({
+            edgeStrategy: 'set',
+            easing: 'linear'
+        });
 
+        setInterval(start, 2000);
 
+        function start() {
+            $("#section1").addClass("show")
+        }
+
+        $(window).scroll(function () {
+            var wScroll = $(this).scrollTop();
+
+            $(".scroll").text(wScroll);
+ 
+        });
 
         // clock
 
@@ -601,9 +497,11 @@
         }
 
         init();
-
-
     </script>
+
 </body>
 
 </html>
+
+
+<!-- 디자인 참고사이트: http://hourly-app.com/-->
